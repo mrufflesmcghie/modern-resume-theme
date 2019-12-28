@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
 
-  <body class="{% if site.darkmode %}dark{% endif %}">
+  <body class="{% if site.theme.darkmode %}dark{% endif %}">
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
