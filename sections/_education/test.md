@@ -1,0 +1,18 @@
+---
+layout: education
+name: Institution name
+dates: Date Range (eg. 2016 - 2019)
+qualification: Qualifications (eg. BA Performing Arts)
+quote: >
+  Short institution or course description (optional)
+description: | # this will include new lines to allow paragraphs
+  Description of qualification
+layout: education
+name: Institution name
+dates: Date Range (eg. 2016 - 2019)
+qualification: Qualifications (eg. BA Performing Arts)
+quote: >
+  Short institution or course description (optional)
+description: | # this will include new lines to allow paragraphs
+  Description of qualification
+---
