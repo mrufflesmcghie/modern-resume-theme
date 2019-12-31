@@ -8,9 +8,9 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {%- if jekyll.environment == 'production' and site.gtm -%} {%- include
-        gtm_body.html -%} {%- endif -%} {%- include about.html -%} {%- if
-        site.data.projects.size > 0 -%} {%- include projects.html -%} {%- endif
-        -%} {%- if site.data.experience.size > 0 -%} {%- include experience.html
+        gtm_body.html -%} {%- endif -%} {%- include about.html -%}
+{%- include projects.html -%} 
+        {%- if site.data.experience.size > 0 -%} {%- include experience.html
         -%} {%- endif -%} {%- include education.html -%} {%- if
         site.more_content -%} {%- include more.html -%} {%- endif -%}
       </div>
