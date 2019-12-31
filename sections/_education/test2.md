@@ -1,5 +1,5 @@
 ---
-
+layout: education
 name: Test 2    
 dates: Date Range (eg. 2016 - 2019)
 qualification: Qualifications (eg. BA Performing Arts)
