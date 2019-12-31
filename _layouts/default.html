@@ -16,9 +16,16 @@
         {%- if site.data.experience.size > 0 -%} {%- include experience.html
         -%} {%- endif -%} {%- include education.html -%} {%- if
         site.more_content -%} {%- include more.html -%} {%- endif -%}
-        {% for collection in site.collections %} 
-        {{ site.collections.label}}
-        {% endfor %} 
+        {% for collection in site.collections %}
+  <h2>Items from {{ collection.label }}</h2>
+  <ul>
+    {% for item in site[collection.label] %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+        
+        
       </div>
     </main>
 
