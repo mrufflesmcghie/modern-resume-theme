@@ -1,7 +1,7 @@
 <div class="container projects-container">
   <h3>{{ site.projects_title | default: "Projects" }}</h3>
   {% for project in site.projects %}
-   <div class="row clearfix layout layout-left">
+   <div class="row clearfix layout layout-right">
   <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
     <h4>{{ project.title }}</h4>
     {%- if include.item.company -%}<h4>{{ include.item.company }}</h4>{%- endif -%}
