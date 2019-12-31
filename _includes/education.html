@@ -4,11 +4,11 @@
 
 {% for education in site.education %}
 
-{{education.name}} {{education.qualification}} {{education.dates}}
+
 
 <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-        <h4>{{ education.dates }}</h4>
+        {{education.name}} {{education.qualification}} {{education.dates}}
         {%- if include.item.company -%}<h4>{{ include.item.company }}</h4>{%- endif -%}
         {%- if include.item.link -%}
         {% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
