@@ -4,10 +4,11 @@
 
 {% for education in site.education %}
 
-<h1> {{education.category}} </h1>
+
 
 <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+        <h1> {{education.category}} </h1>
         <h4 class="title">{{education.name}} </h4>
         <h4 class="sub-title">{{education.qualification}} </h4> 
         <p class="dates">{{education.dates}}</p>
