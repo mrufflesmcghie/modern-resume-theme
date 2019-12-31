@@ -9,6 +9,13 @@ collections:
   projects:
     output: true
 
+defaults:
+  - scope:
+      path: "/education" # an empty string here means all files in the project
+    values:
+      category: education
+      layout: education
+
 # Personal info (Moved to data/settings.yml)
 #name: Your Name
 #title: Your job title
