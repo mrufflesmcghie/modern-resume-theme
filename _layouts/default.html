@@ -15,10 +15,10 @@ layout: default
         gtm_body.html -%} {%- endif -%} {%- include about.html -%} {% for
         collection in site.collections %}
         <h3>{{ collection.label }}</h3>
-        <ul>
+        
           {% for item in site[collection.label] %} {%- include
           {{collection.label}}.html -%} {% endfor %}
-        </ul>
+        
         {% endfor %}
       </div>
     </main>
