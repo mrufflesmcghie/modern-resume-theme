@@ -12,21 +12,14 @@ layout: default
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {%- if jekyll.environment == 'production' and site.gtm -%} {%- include
-        gtm_body.html -%} {%- endif -%} {%- include about.html -%}
-{%- include projects.html -%} 
-        {%- if site.data.experience.size > 0 -%} {%- include experience.html
-        -%} {%- endif -%} {%- include education.html -%} {%- if
-        site.more_content -%} {%- include more.html -%} {%- endif -%}
-        {% for collection in site.collections %}
-  <h2>Items from {{ collection.label }}</h2>
-  <ul>
-    {% for item in site[collection.label] %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
-        
-        
+        gtm_body.html -%} {%- endif -%} {%- include about.html -%} {% for
+        collection in site.collections %}
+        <h3>{{ collection.label }}</h3>
+        <ul>
+          {% for item in site[collection.label] %} {%- include
+          {{collection.label}}.html -%} {% endfor %}
+        </ul>
+        {% endfor %}
       </div>
     </main>
 
