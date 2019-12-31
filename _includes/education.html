@@ -1,7 +1,10 @@
-<h3>Education</h3>
-{% for education in site.education %}
 <div class="container education-container {{education.layout}}">
-  {{education.name}} {{education.qualification}} {{education.dates}}
+
+<h3>Education</h3>
+
+{% for education in site.education %}
+
+{{education.name}} {{education.qualification}} {{education.dates}}
 
 <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
