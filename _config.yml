@@ -83,3 +83,7 @@ exclude:
     "scripts/",
     "docker-compose.yml",
   ]
+include:
+  [
+    "sections", 
+  ] 
