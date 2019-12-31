@@ -1,8 +1,8 @@
 <div class="container header-contianer">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
-      <h1>{{ site.name | escape }}</h1>
-      <h2>{{ site.title | escape }}</h2>
+      <h1>{{ site.data.settings.name | escape }}</h1>
+      <h2>{{ site.data.settings.title | escape }}</h2>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
       <ul class="icons no-print">
@@ -13,7 +13,7 @@
             </a>
           </li>
         {%- endif -%}
-        {%- if site.facebook_username -%}
+        {%- if site.data.facebook_username -%}
           <li>
             <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
               <i class="fab fa-facebook" title="Facebook link"></i>
