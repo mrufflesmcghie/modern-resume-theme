@@ -12,8 +12,11 @@ layout: default
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {%- if jekyll.environment == 'production' and site.gtm -%} {%- include
-        gtm_body.html -%} {%- endif -%} {%- include about.html -%} {% for
+        gtm_body.html -%} {%- endif -%} {%- include about.html -%} 
+        
+        {% for
         collection in site.collections %}
+        {% if collection.label != "posts" %}
         <h3>{{ collection.label }}</h3>
         
           {% for item in site[collection.label] %} {%- include
