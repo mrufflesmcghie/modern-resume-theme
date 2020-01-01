@@ -22,6 +22,8 @@ layout: default
           {% for item in site[collection.label] %} {%- include
           {{collection.label}}.html -%}
         
+        {%- endif -%} 
+        
         {%- endfor -%}
       </div>
     </main>
