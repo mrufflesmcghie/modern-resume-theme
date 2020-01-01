@@ -16,13 +16,13 @@ layout: default
         
         {% for
         collection in site.collections %}
-        {%- if collection.label != "posts" -%}
+        {% if collection.label != "posts" %}
         <h3>{{ collection.label }}</h3>
         
           {% for item in site[collection.label] %} {%- include
           {{collection.label}}.html -%}
         
-        {%- endif -%} 
+        {% endif %} 
         
         {%- endfor -%}
       </div>
