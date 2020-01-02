@@ -8,9 +8,9 @@ collections:
     output: true
   Projects:
     output: true
-  Work
+  Work:
     output: true
-  Skills
+  Skills:
     output: true
 
 # Add more sections here following the below format
