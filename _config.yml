@@ -1,13 +1,24 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+repository: mrufflesmcghie/modern-resume-theme
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 collections_dir: sections
 
 collections:
-  education:
+  Education:
     output: true
-  projects:
+  Projects:
     output: true
+  Work
+    output: true
+  Skills
+    output: true
+
+# Add more sections here following the below format
+
+  #section name:
+     output: true #Setting this does create its own page you can reference /sectionname
+
+# Set Collection Defaults
 
 defaults:
   - scope:
