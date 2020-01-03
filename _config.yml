@@ -1,6 +1,7 @@
 # Site
-repository: mrufflesmcghie/modern-resume-theme
+# repository: mrufflesmcghie/modern-resume-theme
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
 collections_dir: sections
 
 collections:
