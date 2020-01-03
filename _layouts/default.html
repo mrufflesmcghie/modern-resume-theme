@@ -20,7 +20,7 @@ layout: default
         
         <h3>{{ collection.label }}</h3>
         
-          {% for item in site[collection.label] %} {%- include
+          {% for item in collection %} {%- include
           {{ collection.label }}.html -%}
         {% endfor %} 
         
