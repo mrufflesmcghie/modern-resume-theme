@@ -17,7 +17,7 @@ collections:
 # Add more sections here following the below format
 
   #section name:
-     output: true #Setting this does create its own page you can reference /sectionname
+     #output: true #Setting this does create its own page you can reference /sectionname
 
 # Set Collection Defaults
 
